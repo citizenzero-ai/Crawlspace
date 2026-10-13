@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tomas Services</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAgN0lEQVR42u18eZxcZZnu837fd06t3enuJJ0VEkKHrJ2EdEgYAkQUxo3r1R8mDCCLgnFG5c6gI97rlvRVGWTkOorOAOKwDCAmOI4zOqPoFSKOAglbQjayQEI2kt6qu7Zzzve97/3jVHVXdzpiFB353XqS+qW6+pyqOu/+Pu97AtRRRx111FFHHXXUUUcdddRRRx111FFHHXXUUUcdddRRRx111FHHGxtUF8F/HXSNElRdHH84qKrlX3zxxema101dNL//cGMAgIgwfebsqyefMuOlaW2zH1q4bNn0UTyjHhtf53DjAGB2e/viYiH4Umjthc5aKKWglOr1ff/zL+/a/lUi4srxDEDqCvjdww0A8IUXXjhm174DnwpK5RtYxBNhRyAlEAagldLwPP1EQzJ94/btWx4fqbi6Ak7++2sAFgDaZs27pFAq3iwsbcwMgbghK6fKtYojUkYRIZlMfH3alImdGzZs6KpV4mso+kSJ3P7/poBBq12w4Kwzuvt7b3bOvYedg4hYEEwltLAINMVXW6MQkNaGFNH+dDL96T27tt4vItUk7f5QYYneoFavALjVq1d7j/zs8RuCsPxpZm50zjERgQAlAieA1nHs38ks0wScZGZHRIpAJBBLREYpBUP638c2t9z4/PMbt44SlhQAbl+89OxCvniJcxEjfhOBgLRRA2+/6C233HbbbUHl+8nJWNEbzeoZgMyat/CCrTtefCiMwqudcwkIHBFpCASAkFLaGNPn+/7ac5Yu/kDfQPGHYRjMJKIZEBAgFiADQISZGTKrWC5d0zJugrrqfZc/+dRTT0VD8lmhgX2caWhYGQRBZxiGyx275dba5da55dbac1uaGr+ybdu24GSN+o2igGpNz8uWvXmCSnhfKRSLX3POTRZmGxecIIE4ItLaaDKe953W5nGX79y++V+3bdtmu48dOVQYyN3bOmnyEWY+S0CNEGYCgYi0AE6EE8zuzS/u2Xvx5Kmn7u06emQ3AGAafORydkzz+EVRFL5NhEMRACKORUQpdaxtxvSvb9my5aQVoN4A4cYAYCLiGbPmXrP/8EvPhGH4QXZORISJyBDAUjV6z3shk21498GXdv/Zc889uWvRsmUzTz199t1tc+ZdCwB7d267o7m15axEwr9HG0+B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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<!--
+  PHOTOS: all free under the Pexels license (no attribution required). Download and self-host before launch.
+  Source page for each: https://www.pexels.com/photo/<ID>/
+  Problem signs: 5214204 wet concrete · 7434331 mildew (Karen Laårk Boshoff) · 4092026 basement beams (Curtis Adams)
+                 19459909 yard puddle (Dr Photographer) · 13307118 gutter runoff (Devin Brown) · 32489252 pump & hose (Adam Šumník)
+  Drainage:      37627673 drain pipe in trench (D Goug) · 35290675 technician at water pump · 32588548 plumber with wrench
+                 26925731 shovel on gravel · 9809765 drainage pipe at wall · 8926956 digging soil
+  Crawl spaces:  32497163 crawl space inspection (Kathleen Austin Kuhn) · 6124242 sealing a seam · 12282727 hygrometer
+                 37911416 truss with metal reinforcement · 18351809 inspecting mold with flashlight · 6124239 installing insulation
+  Process:       8293667 inspector with clipboard (RDNE Stock project)
+-->
+<style>
+/* Layout: mobile-first field manual. Base styles are the phone layout; min-width queries add columns.
+   Cross-section diagram carries the brand; every card leads with a photo. Single light theme. */
+:root{
+  color-scheme:light;
+  --bg:#F7F9F8;        /* site background */
+  --surface:#FFFFFF;
+  --tint:#E9F0F8;      /* logo-blue tint */
+  --tint-2:#EEF1F3;    /* concrete tint */
+  --ink:#171C20;       /* logo black */
+  --muted:#525C64;
+  --line:#D8DEE3;
+  --water:#0B4F9C;     /* logo blue */
+  --clay:#0B4F9C;      /* CTA = logo blue */
+  --clay-ink:#FFFFFF;
+  --star:#D89A1E;
+  --soil:#A7896D;
+  --soil-2:#DCCAB6;
+  --gravel:#9AA6A2;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:8px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased;padding-bottom:76px}
+a{color:inherit}
+img{max-width:100%}
+h1,h2,h3{font-family:var(--f-display);font-stretch:112%;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,6vw,2.8rem);font-weight:850}
+h3{font-size:1.1rem;font-weight:750;font-stretch:100%}
+p{margin:0}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:16px}
+.eyebrow{font:600 .72rem/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--water)}
+.lede{color:var(--muted);font-size:1.02rem;max-width:62ch}
+.spec{display:inline-block;font:600 .66rem/1 var(--f-mono);letter-spacing:.05em;text-transform:uppercase;padding:.45em .6em;border:1px solid var(--line);border-radius:3px;color:var(--muted);background:var(--bg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font:700 1rem/1 var(--f-body);padding:.95em 1.25em;border-radius:var(--r);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--clay);color:var(--clay-ink)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:var(--surface)}
+:focus-visible{outline:3px solid var(--water);outline-offset:2px}
+section{padding-block:48px}
+.section-head{display:grid;gap:12px;margin-bottom:28px}
+
+/* photo frame (fallback stripes show only if the image can't load) */
+.photo{position:relative;overflow:hidden;background:repeating-linear-gradient(135deg,var(--tint-2) 0 12px,var(--bg) 12px 24px);display:flex;align-items:flex-end;max-width:100%}
+.photo span{font:600 .62rem/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface);padding:6px 8px;margin:8px;border-radius:3px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+
+/* top bar + header */
+/* service-area bar under the main navigation */
+.serving{background:#3A4046;color:#FFFFFF;font-size:.86rem;line-height:1.4}
+.serving .wrap{padding-block:9px;text-align:center}
+.header-phone{display:none;align-items:center;gap:8px;font:800 1.15rem/1 var(--f-display);font-stretch:104%;text-decoration:none;color:var(--ink);white-space:nowrap}
+.header-phone svg{flex:none}
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.logo img{flex:none;height:40px;width:auto}
+.logo .wm{display:grid;gap:3px}
+.logo b{display:block;font:900 1.35rem/.95 var(--f-display);font-stretch:112%;letter-spacing:.02em}
+.logo small{display:flex;align-items:center;gap:5px;font:700 .56rem/1 var(--f-display);letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
+.logo small span{margin-right:-.24em}
+.logo small::before,.logo small::after{content:"";flex:1;min-width:6px;height:2px;background:var(--water)}
+.logo-full{display:block;width:220px;max-width:100%;height:auto}
+.btn-primary:hover{background:#083D79}
+nav.main,.header-cta{display:none}
+nav.main a{text-decoration:none;font-weight:600;font-size:.95rem}
+nav.main a:hover{color:var(--water)}
+.menu-btn{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:9px 14px;font:600 .9rem var(--f-body);color:var(--ink);cursor:pointer}
+/* mobile menu: full-width vertical drop-down */
+.mobile-nav{border-top:1px solid var(--line);background:var(--surface);max-height:calc(100dvh - 64px);overflow-y:auto;overscroll-behavior:contain;box-shadow:0 12px 24px rgba(23,28,32,.12)}
+header.site .mobile-nav .wrap{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;padding-block:4px 20px}
+.m-group{border-bottom:1px solid var(--line)}
+.m-link{display:flex;justify-content:space-between;align-items:center;padding:16px 2px;font:700 1.08rem/1.2 var(--f-body);color:var(--ink);text-decoration:none}
+.m-link::after{content:"";width:8px;height:8px;border-right:2px solid var(--water);border-top:2px solid var(--water);transform:rotate(45deg);margin-right:4px;flex:none}
+.m-sub{list-style:none;margin:-6px 0 0;padding:0 0 12px 14px;border-left:2px solid var(--tint);margin-left:4px;display:flex;flex-direction:column}
+.m-sub a{display:block;padding:9px 10px;font-size:.96rem;color:var(--muted);text-decoration:none}
+.m-sub a:hover,.m-link:hover{color:var(--water)}
+.m-actions{display:flex;flex-direction:column;gap:10px;padding-top:18px}
+.m-actions .btn{width:100%}
+section[id]{scroll-margin-top:72px}
+
+/* hero */
+.hero{padding-block:32px 40px;background:var(--surface);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;gap:28px}
+.hero h1{font-size:clamp(2.1rem,9vw,4.3rem);font-weight:900;font-stretch:115%;margin-block:12px 16px}
+.hero h1 em{font-style:normal;color:var(--water)}
+.hero-ctas{display:grid;gap:10px;margin-top:22px}
+.helper{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}
+.helper p{font-weight:700;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 .88rem var(--f-body);padding:.6em .9em;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--water);color:var(--water)}
+.xsec{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.xsec-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.xsec-head span{font:600 .64rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.xsec svg{display:block;width:100%;height:auto}
+.legend{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px;font-size:.88rem}
+.legend li{display:flex;gap:10px;align-items:center}
+.legend i{flex:none;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--surface);font:600 .72rem/22px var(--f-mono);text-align:center;font-style:normal}
+.legend .d i{background:var(--water)}
+
+/* trust strip */
+.trust{padding-block:0;background:var(--tint)}
+.trust ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr}
+.trust li{padding:16px 12px;display:grid;gap:2px;border-bottom:1px solid var(--line)}
+.trust li:nth-child(odd){border-right:1px solid var(--line)}
+.trust li:last-child{grid-column:1/-1;border-right:0;border-bottom:0}
+.trust b{font:800 .98rem/1.2 var(--f-display);font-stretch:106%}
+.trust span{font-size:.8rem;color:var(--muted)}
+
+/* cards: shared shell */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card .photo{aspect-ratio:16/9;flex:none}
+.card-body{padding:18px;display:grid;gap:10px;align-content:start}
+.card-body p{color:var(--muted);font-size:.94rem}
+
+/* problem signs: horizontal rows on phones */
+.signs{display:grid;gap:12px}
+.sign{flex-direction:row}
+.sign .photo{aspect-ratio:auto;width:112px;min-height:100%}
+.sign .photo span{display:none}
+.sign .card-body{padding:14px;gap:6px}
+.sign h3{font-size:1rem}
+.sign p{font-size:.88rem}
+.tag{font:600 .64rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase}
+.tag.d{color:var(--water)}
+.tag.c{color:var(--ink)}
+
+/* services */
+.svc-band{border-top:1px solid var(--line)}
+.svc-band.alt{background:var(--tint-2)}
+.svc-grid{display:grid;gap:14px;grid-auto-flow:dense}
+.svc ul{margin:0;padding-left:1.1em;font-size:.92rem;display:grid;gap:4px}
+.specs{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.svc.feature .card-body{background:var(--tint)}
+.svc.feature .spec{background:var(--surface)}
+.svc.feature h3{font-size:clamp(1.3rem,5vw,1.8rem);font-stretch:112%}
+.rh{margin-top:6px;display:grid;gap:8px}
+.rh-bar{height:12px;border-radius:6px;background:linear-gradient(90deg,var(--water) 0 55%,#D8A93A 55% 68%,#C4572F 68% 100%);position:relative}
+.rh-mark{position:absolute;top:-5px;width:3px;height:22px;background:var(--ink);border-radius:2px}
+.rh-scale{display:flex;justify-content:space-between;font:600 .64rem var(--f-mono);letter-spacing:.04em;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* process */
+.process-photo{aspect-ratio:16/10;border-radius:10px;margin-bottom:24px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{padding:18px 0 18px 48px;position:relative;display:grid;gap:6px;counter-increment:s;border-left:2px solid var(--line);margin-left:15px;padding-left:30px}
+.steps li:last-child{border-left-color:transparent}
+.steps li::before{content:counter(s);position:absolute;left:-16px;top:16px;width:30px;height:30px;border-radius:50%;background:var(--water);color:var(--surface);font:600 .85rem/30px var(--f-mono);text-align:center}
+.steps p{color:var(--muted);font-size:.94rem}
+
+/* reviews: swipe row on phones */
+.reviews{display:grid;grid-auto-flow:column;grid-auto-columns:85%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
+.review{scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:12px;align-content:space-between}
+.stars{color:var(--star);letter-spacing:2px}
+.review blockquote{margin:0}
+.review footer{font-size:.85rem;color:var(--muted)}
+.review footer b{color:var(--ink);display:block}
+.note{font:600 .68rem var(--f-mono);letter-spacing:.06em;color:var(--muted);margin-top:14px;text-transform:uppercase}
+
+/* service area */
+.area{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;display:grid;gap:18px}
+.area-text{display:grid;gap:12px;min-width:0}
+.towns{display:flex;flex-wrap:wrap;gap:8px;align-content:start}
+.towns span{font-size:.9rem;padding:.4em .75em;border-radius:4px;background:var(--tint-2)}
+
+/* faq */
+.faq-wrap{display:grid;gap:20px}
+details{border-top:1px solid var(--line);padding-block:16px}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:600 1.3rem/1 var(--f-mono);color:var(--water);flex:none}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--muted);max-width:64ch}
+
+/* contact */
+.contact{background:var(--tint)}
+.contact .wrap{display:grid;gap:28px}
+.phone-big{font:900 clamp(1.8rem,8vw,2.6rem)/1 var(--f-display);font-stretch:110%;text-decoration:none;display:inline-block;margin-top:18px;color:var(--water);user-select:all}
+form.est{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:14px}
+.field{display:grid;gap:6px;min-width:0}
+label{font-weight:700;font-size:.88rem}
+input,select,textarea{font:400 1rem var(--f-body);padding:.8em .85em;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--ink);width:100%}
+textarea{min-height:96px;resize:vertical}
+form.est .btn{width:100%}
+.form-done{background:var(--tint);border-radius:var(--r);padding:12px 14px;font-size:.92rem}
+
+footer.site{padding-block:40px 28px;border-top:1px solid var(--line);background:var(--surface)}
+footer.site .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+footer.site .brand{grid-column:1/-1}
+footer.site h4{font:600 .7rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+footer.site ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.92rem}
+footer.site ul a{text-decoration:none}
+footer.site ul a:hover{color:var(--water)}
+.legal{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);display:grid;gap:6px;font-size:.8rem;color:var(--muted)}
+
+.callbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -4px 16px rgba(23,33,31,.06)}
+.callbar .btn{padding:.8em}
+
+/* ---------- 480px+ ---------- */
+@media (min-width:480px){
+  .legend{grid-template-columns:1fr 1fr}
+  .hero-ctas{display:flex;flex-wrap:wrap}
+}
+
+/* ---------- 640px+ (large phones, small tablets) ---------- */
+@media (min-width:640px){
+  .wrap{padding-inline:24px}
+  section{padding-block:64px}
+  .signs{grid-template-columns:1fr 1fr;gap:14px}
+  .sign{flex-direction:column}
+  .sign .photo{width:auto;aspect-ratio:16/9;min-height:0}
+  .sign .photo span{display:inline-block}
+  .sign .card-body{padding:18px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .reviews{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:1fr 1fr;overflow:visible;margin-inline:0;padding-inline:0}
+  .reviews .review:last-child{grid-column:1/-1}
+  .steps{grid-template-columns:1fr 1fr;gap:20px}
+  .steps li{border-left:0;margin-left:0;padding:22px 0 0;border-top:3px solid var(--ink)}
+  .steps li::before{position:static;width:auto;height:auto;border-radius:0;background:none;color:var(--water);content:"Step " counter(s);font:600 .72rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase;text-align:left}
+  .process-photo{aspect-ratio:21/9}
+  .area{grid-template-columns:1fr 1fr;padding:32px;gap:32px}
+  form.est{grid-template-columns:1fr 1fr;padding:28px}
+  .field.full,.form-done{grid-column:1/-1}
+  form.est .btn{width:auto;justify-self:start}
+  .trust ul{grid-template-columns:repeat(3,1fr)}
+  .trust li{border-right:1px solid var(--line)}
+  .trust li:nth-child(3n){border-right:0}
+  .trust li:nth-child(n+4){border-bottom:0}
+  .trust li:last-child{grid-column:auto}
+}
+
+/* ---------- 960px+ (desktop) ---------- */
+@media (min-width:960px){
+  body{padding-bottom:0}
+  .callbar,.menu-btn,.mobile-nav{display:none!important}
+  nav.main{display:flex;gap:26px;align-items:center;margin-left:16px;margin-right:auto}
+  .header-cta,.header-phone{display:inline-flex}
+  .serving{font-size:1rem}
+  .serving .wrap{padding-block:11px}
+  header.site .wrap{padding-block:14px}
+  section{padding-block:88px}
+  .section-head{margin-bottom:40px}
+  .hero{padding-block:64px}
+  .hero .wrap{grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+  .xsec{padding:18px}
+  .trust ul{grid-template-columns:repeat(5,1fr)}
+  .trust li{padding:22px 18px;border-bottom:0;border-right:1px solid var(--line)}
+  .trust li:nth-child(3n){border-right:1px solid var(--line)}
+  .trust li:last-child{border-right:0}
+  .signs{grid-template-columns:repeat(3,1fr);gap:16px}
+  .svc-grid{grid-template-columns:repeat(3,1fr);gap:18px}
+  .svc.feature{grid-column:span 2;grid-row:span 2}
+  .svc.feature .photo{aspect-ratio:auto;flex:1;min-height:240px}
+  .svc.feature .card-body{padding:24px}
+  .reviews{grid-template-columns:repeat(3,1fr)}
+  .reviews .review:last-child{grid-column:auto}
+  .steps{grid-template-columns:repeat(4,1fr);gap:24px}
+  .faq-wrap{grid-template-columns:.8fr 1.2fr;gap:56px}
+  .contact .wrap{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  footer.site .cols{grid-template-columns:1.4fr 1fr 1fr 1fr}
+  footer.site .brand{grid-column:auto}
+  .legal{display:flex;justify-content:space-between}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Tomas Services home">
+      <img src="data:image/png;base64,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" alt="" width="77" height="40">
+      <span class="wm"><b>TOMAS</b><small><span>Services</span></small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#drainage">Drainage</a>
+      <a href="#crawl">Crawl Spaces</a>
+      <a href="#process">How It Works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-primary header-cta" href="#contact">Free Inspection</a>
+    <a class="header-phone" href="tel:5550000000"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="var(--ink)" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(555) 000-0000</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mnav">Menu</button>
+  </div>
+  <div class="mobile-nav" id="mnav" hidden>
+    <nav class="wrap" aria-label="Mobile">
+      <div class="m-group">
+        <a class="m-link" href="#drainage">Drainage</a>
+        <ul class="m-sub">
+          <li><a href="#drainage">Interior perimeter drains</a></li>
+          <li><a href="#drainage">Sump pump systems &amp; service</a></li>
+          <li><a href="#drainage">French drains &amp; yard drainage</a></li>
+          <li><a href="#drainage">Downspout extensions</a></li>
+          <li><a href="#drainage">Grading &amp; swales</a></li>
+        </ul>
+      </div>
+      <div class="m-group">
+        <a class="m-link" href="#crawl">Crawl Spaces</a>
+        <ul class="m-sub">
+          <li><a href="#crawl">Encapsulation</a></li>
+          <li><a href="#crawl">Vapor barriers</a></li>
+          <li><a href="#crawl">Dehumidifiers</a></li>
+          <li><a href="#crawl">Support jacks</a></li>
+          <li><a href="#crawl">Mold cleanup &amp; insulation</a></li>
+        </ul>
+      </div>
+      <div class="m-group"><a class="m-link" href="#signs">Problem Signs</a></div>
+      <div class="m-group"><a class="m-link" href="#process">How It Works</a></div>
+      <div class="m-group"><a class="m-link" href="#reviews">Reviews</a></div>
+      <div class="m-group"><a class="m-link" href="#area">Service Area</a></div>
+      <div class="m-group"><a class="m-link" href="#faq">FAQ</a></div>
+      <div class="m-actions">
+        <a class="btn btn-primary" href="#contact">Schedule a free inspection</a>
+        <a class="btn btn-ghost" href="tel:5550000000">Call (555) 000-0000</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="serving"><div class="wrap">Proudly serving Chattanooga, Tennessee and surrounding counties.</div></div>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Drainage &amp; crawl space specialists</span>
+      <h1>Keep water <em>away</em> from the house and <em>out</em> from under it.</h1>
+      <p class="lede">Tomas Services finds where water is getting in, then fixes it at the source: perimeter drains, sump systems, yard drainage, and sealed, dehumidified crawl spaces. One crew, one written plan, backed by a warranty.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">Schedule a free inspection</a>
+        <a class="btn btn-ghost" href="tel:5550000000">Call (555) 000-0000</a>
+      </div>
+      <div class="helper">
+        <p>What are you seeing at your home?</p>
+        <div class="chips" role="group" aria-label="Choose a problem">
+          <button class="chip" data-issue="Water in crawl space">Water in the crawl space</button>
+          <button class="chip" data-issue="Musty smell / mold">Musty smell or mold</button>
+          <button class="chip" data-issue="Yard flooding / pooling">Yard pooling after rain</button>
+          <button class="chip" data-issue="Sump pump problem">Sump pump trouble</button>
+          <button class="chip" data-issue="Sagging floors">Soft or sagging floors</button>
+        </div>
+      </div>
+    </div>
+
+    <figure class="xsec">
+      <div class="xsec-head"><h3>Where we work</h3><span>Section A–A · not to scale</span></div>
+      <svg viewBox="0 0 560 400" role="img" aria-labelledby="xt">
+        <title id="xt">Cross-section of a house showing crawl space and drainage systems Tomas Services installs</title>
+        <defs>
+          <pattern id="soilp" width="14" height="14" patternUnits="userSpaceOnUse">
+            <rect width="14" height="14" fill="var(--soil-2)"/>
+            <circle cx="3" cy="4" r="1.2" fill="var(--soil)"/><circle cx="10" cy="10" r="1" fill="var(--soil)"/>
+          </pattern>
+          <pattern id="gravp" width="8" height="8" patternUnits="userSpaceOnUse">
+            <rect width="8" height="8" fill="var(--tint-2)"/>
+            <circle cx="2" cy="2" r="1.6" fill="var(--gravel)"/><circle cx="6" cy="6" r="1.4" fill="var(--gravel)"/>
+          </pattern>
+          <marker id="arr" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="var(--water)"/></marker>
+        </defs>
+        <polygon points="0,150 330,150 560,166 560,400 0,400" fill="url(#soilp)"/>
+        <rect x="58" y="122" width="254" height="118" fill="var(--tint-2)"/>
+        <polygon points="26,44 185,4 344,44" fill="var(--tint-2)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="40" y="44" width="290" height="66" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="150" y="66" width="34" height="44" fill="var(--tint-2)" stroke="var(--ink)" stroke-width="1.5"/>
+        <rect x="226" y="62" width="44" height="28" fill="var(--tint)" stroke="var(--ink)" stroke-width="1.5"/>
+        <rect x="40" y="110" width="290" height="12" fill="var(--soil-2)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="40" y="122" width="18" height="140" fill="var(--gravel)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="312" y="122" width="18" height="140" fill="var(--gravel)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="28" y="262" width="42" height="18" fill="var(--gravel)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="300" y="262" width="42" height="18" fill="var(--gravel)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="60" y="240" width="34" height="24" fill="url(#gravp)"/>
+        <rect x="276" y="240" width="34" height="24" fill="url(#gravp)"/>
+        <circle cx="77" cy="253" r="7" fill="var(--surface)" stroke="var(--water)" stroke-width="3"/>
+        <circle cx="293" cy="253" r="7" fill="var(--surface)" stroke="var(--water)" stroke-width="3"/>
+        <rect x="222" y="240" width="38" height="66" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="224" y="280" width="34" height="24" fill="var(--tint)"/>
+        <rect x="233" y="276" width="16" height="22" rx="2" fill="var(--ink)"/>
+        <path d="M241 276V140H338V150H360" fill="none" stroke="var(--water)" stroke-width="4"/>
+        <path d="M61 132V238H309V132" fill="none" stroke="var(--surface)" stroke-width="5"/>
+        <path d="M61 132V238H309V132" fill="none" stroke="var(--ink)" stroke-width="1" stroke-dasharray="4 4"/>
+        <rect x="112" y="206" width="44" height="30" rx="3" fill="var(--ink)"/>
+        <path d="M118 214h32M118 221h32" stroke="var(--surface)" stroke-width="2"/>
+        <rect x="182" y="122" width="8" height="112" fill="var(--muted)"/>
+        <rect x="174" y="232" width="24" height="6" fill="var(--ink)"/>
+        <rect x="176" y="122" width="20" height="5" fill="var(--ink)"/>
+        <rect x="336" y="40" width="14" height="8" fill="var(--ink)"/>
+        <path d="M346 48V148H432" fill="none" stroke="var(--ink)" stroke-width="5"/>
+        <path d="M466 168h40v62h-40z" fill="url(#gravp)" stroke="var(--ink)" stroke-width="1.5"/>
+        <circle cx="486" cy="214" r="8" fill="var(--surface)" stroke="var(--water)" stroke-width="3"/>
+        <g fill="none" stroke="var(--water)" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arr)">
+          <path d="M10 190 Q40 230 64 250"/>
+          <path d="M548 250 Q420 290 312 256"/>
+          <path d="M440 176 Q462 190 474 204"/>
+          <path d="M130 330 Q170 300 222 296"/>
+        </g>
+        <text x="540" y="160" font-family="IBM Plex Mono,monospace" font-size="11" fill="var(--muted)" text-anchor="end">GRADE</text>
+        <g font-family="IBM Plex Mono,monospace" font-size="14" font-weight="600" text-anchor="middle">
+          <g><circle cx="77" cy="290" r="14" fill="var(--water)"/><text x="77" y="295" fill="var(--surface)">1</text></g>
+          <g><circle cx="241" cy="328" r="14" fill="var(--water)"/><text x="241" y="333" fill="var(--surface)">2</text></g>
+          <g><circle cx="404" cy="128" r="14" fill="var(--water)"/><text x="404" y="133" fill="var(--surface)">3</text></g>
+          <g><circle cx="486" cy="254" r="14" fill="var(--water)"/><text x="486" y="259" fill="var(--surface)">4</text></g>
+          <g><circle cx="98" cy="160" r="14" fill="var(--ink)"/><text x="98" y="165" fill="var(--surface)">5</text></g>
+          <g><circle cx="134" cy="186" r="14" fill="var(--ink)"/><text x="134" y="191" fill="var(--surface)">6</text></g>
+          <g><circle cx="214" cy="166" r="14" fill="var(--ink)"/><text x="214" y="171" fill="var(--surface)">7</text></g>
+        </g>
+      </svg>
+      <ol class="legend" aria-label="Diagram key">
+        <li class="d"><i>1</i>Interior perimeter drain</li>
+        <li class="d"><i>2</i>Sump pump &amp; discharge</li>
+        <li class="d"><i>3</i>Downspout extension</li>
+        <li class="d"><i>4</i>French drain</li>
+        <li><i>5</i>Encapsulation liner</li>
+        <li><i>6</i>Dehumidifier</li>
+        <li><i>7</i>Support jack</li>
+      </ol>
+    </figure>
+  </div>
+</section>
+
+<section class="trust" aria-label="Why homeowners call us">
+  <div class="wrap">
+    <ul>
+      <li><b>Free inspections</b><span>Written findings, no obligation</span></li>
+      <li><b>Written warranties</b><span>On every system we install</span></li>
+      <li><b>Moisture readings</b><span>Measured, not guessed</span></li>
+      <li><b>Licensed &amp; insured</b><span>[License # here]</span></li>
+      <li><b>Local crews</b><span>Our own installers, not subs</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="signs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Problem signs</span>
+      <h2>Water problems rarely announce themselves</h2>
+      <p class="lede">Most of what we fix starts small and out of sight. If any of these sound familiar, an inspection will tell you what's causing it and what it will take to stop.</p>
+    </div>
+    <div class="signs">
+      <article class="card sign"><div class="photo"><span>Wet concrete</span><img src="https://images.pexels.com/photos/5214204/pexels-photo-5214204.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Wet, cracked concrete surface" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><span class="tag c">Crawl space</span><h3>Standing water or mud under the house</h3><p>Groundwater and runoff collecting on a dirt floor soaks framing and feeds mold.</p></div></article>
+      <article class="card sign"><div class="photo"><span>Mildew stains</span><img src="https://images.pexels.com/photos/7434331/pexels-photo-7434331.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Dark mildew stains on a damp wall" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><span class="tag c">Crawl space</span><h3>Musty smell inside the house</h3><p>Air rises from the crawl space into living areas. If it smells damp downstairs, it's coming upstairs.</p></div></article>
+      <article class="card sign"><div class="photo"><span>Floor framing</span><img src="https://images.pexels.com/photos/4092026/pexels-photo-4092026.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Exposed wooden floor beams over concrete foundation walls" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><span class="tag c">Crawl space</span><h3>Soft, bouncy, or sagging floors</h3><p>Moisture weakens joists and girders, and settled piers leave floors uneven.</p></div></article>
+      <article class="card sign"><div class="photo"><span>Pooled water</span><img src="https://images.pexels.com/photos/19459909/pexels-photo-19459909.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Muddy puddle in a yard next to a drain pipe" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><span class="tag d">Drainage</span><h3>Yard pools for days after rain</h3><p>Low spots, clay soil, and poor grading hold water against the foundation.</p></div></article>
+      <article class="card sign"><div class="photo"><span>Gutter runoff</span><img src="https://images.pexels.com/photos/13307118/pexels-photo-13307118.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Rainwater pouring from a house gutter during a storm" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><span class="tag d">Drainage</span><h3>Gutters overflow or dump at the wall</h3><p>One downspout can drop hundreds of gallons beside the footing in a single storm.</p></div></article>
+      <article class="card sign"><div class="photo"><span>Pump &amp; hose</span><img src="https://images.pexels.com/photos/32489252/pexels-photo-32489252.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Water pump with a coiled discharge hose" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><span class="tag d">Drainage</span><h3>Sump pump runs nonstop or fails</h3><p>An undersized, aging, or unprotected pump is the weak point in any drainage system.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="drainage" class="svc-band alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Drainage</span>
+      <h2>Collect it, move it, discharge it away from the house</h2>
+      <p class="lede">Every drainage job follows the same logic: intercept water before it reaches the foundation, carry it to a low point, and send it somewhere it can't come back from.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="card svc feature">
+        <div class="photo"><span>Drain pipe in trench</span><img src="https://images.pexels.com/photos/37627673/pexels-photo-37627673.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Drainage pipe being installed in an open trench" loading="lazy" width="1200" height="675" onerror="this.hidden=true"></div>
+        <div class="card-body">
+          <span class="eyebrow">Most requested</span>
+          <h3>Interior perimeter drain systems</h3>
+          <p>A perforated drain set in a gravel bed along the inside of the foundation footing. It catches water where it seeps in at the wall-floor joint and channels it to a sump pit, so it never pools in the crawl space or basement.</p>
+          <ul>
+            <li>Installed below the liner or slab, out of sight</li>
+            <li>Wall drainage panels direct seepage into the drain</li>
+            <li>Inspection ports for future cleaning</li>
+          </ul>
+          <div class="specs"><span class="spec">4 in perforated pipe</span><span class="spec">Washed gravel bed</span><span class="spec">Ties into sump</span></div>
+        </div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Pump install</span><img src="https://images.pexels.com/photos/35290675/pexels-photo-35290675.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Technician adjusting a water pump" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Sump pump systems</h3><p>Sealed sump pits with a primary pump sized to your water volume, check valve, and a dedicated discharge line.</p>
+        <div class="specs"><span class="spec">Sealed lid</span><span class="spec">Battery backup option</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Pump service</span><img src="https://images.pexels.com/photos/32588548/pexels-photo-32588548.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Technician in uniform repairing a pipe with a wrench" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Sump pump service &amp; replacement</h3><p>Testing, cleaning, and replacement of failed or undersized pumps, plus alarm and backup upgrades.</p>
+        <div class="specs"><span class="spec">High-water alarm</span><span class="spec">Annual check</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Drain gravel</span><img src="https://images.pexels.com/photos/26925731/pexels-photo-26925731.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Shovel resting on a pile of drainage gravel" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>French drains &amp; yard drainage</h3><p>Gravel trenches with perforated pipe that intercept surface and subsurface water across soggy lawns and slopes.</p>
+        <div class="specs"><span class="spec">Filter fabric wrap</span><span class="spec">Pop-up emitters</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Drain line</span><img src="https://images.pexels.com/photos/9809765/pexels-photo-9809765.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="White drainage pipe running along a concrete wall" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Downspout extensions &amp; buried lines</h3><p>Route roof runoff underground and well away from the footing instead of letting it dump at the wall.</p>
+        <div class="specs"><span class="spec">Buried solid pipe</span><span class="spec">10 ft+ discharge</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Grading</span><img src="https://images.pexels.com/photos/8926956/pexels-photo-8926956.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Shovel digging into soil" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Exterior grading &amp; swales</h3><p>Reshape soil so the ground slopes away from the house and shallow swales carry runoff off the lot.</p>
+        <div class="specs"><span class="spec">Slope away from wall</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="crawl" class="svc-band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Crawl spaces</span>
+      <h2>A sealed, dry crawl space protects the whole house above it</h2>
+      <p class="lede">Open vents and bare dirt let humid outdoor air and ground moisture into the structure. Sealing and conditioning the space stops wood rot, mold, and pests, and makes the floors above more comfortable.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="card svc feature">
+        <div class="photo"><span>Crawl space inspection</span><img src="https://images.pexels.com/photos/32497163/pexels-photo-32497163.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Inspector looking into a home's crawl space access opening" loading="lazy" width="1200" height="675" onerror="this.hidden=true"></div>
+        <div class="card-body">
+          <span class="eyebrow">Complete system</span>
+          <h3>Crawl space encapsulation</h3>
+          <p>We cover the floor and walls with a heavy reinforced liner, seal the seams and vents, and add a dehumidifier so the space stays dry year round. Paired with a drain and sump where water is present.</p>
+          <div class="specs"><span class="spec">20 mil reinforced liner</span><span class="spec">Taped seams</span><span class="spec">Sealed vents</span></div>
+          <div class="rh" aria-label="Relative humidity target">
+            <span class="eyebrow">Target: below 55% relative humidity</span>
+            <div class="rh-bar"><span class="rh-mark" style="left:55%"></span></div>
+            <div class="rh-scale"><span>0%</span><span>Dry</span><span>55%</span><span>Mold risk</span><span>100%</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Sealed seams</span><img src="https://images.pexels.com/photos/6124242/pexels-photo-6124242.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Gloved hand sealing a seam" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Vapor barriers</h3><p>A ground-cover barrier that blocks soil moisture from evaporating into the crawl space. A good first step for dry spaces.</p>
+        <div class="specs"><span class="spec">Floor coverage</span><span class="spec">Overlapped seams</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Humidity reading</span><img src="https://images.pexels.com/photos/12282727/pexels-photo-12282727.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Hygrometer showing temperature and humidity" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Crawl space dehumidifiers</h3><p>Energy-efficient units that hold humidity in a safe range and drain to the sump or exterior.</p>
+        <div class="specs"><span class="spec">Self-draining</span><span class="spec">Filter service</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Structural support</span><img src="https://images.pexels.com/photos/37911416/pexels-photo-37911416.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Wood framing reinforced with metal hardware" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Structural support jacks</h3><p>Adjustable steel supports that firm up sagging girders and bring floors back toward level.</p>
+        <div class="specs"><span class="spec">Galvanized steel</span><span class="spec">Adjustable</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Mold inspection</span><img src="https://images.pexels.com/photos/18351809/pexels-photo-18351809.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Person using a flashlight to inspect mold on walls" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Mold cleanup &amp; wood treatment</h3><p>Removal of mold staining from joists and subfloor, followed by treatment before the space is sealed.</p>
+        <div class="specs"><span class="spec">Pre-encapsulation</span></div></div>
+      </article>
+      <article class="card svc">
+        <div class="photo"><span>Insulation</span><img src="https://images.pexels.com/photos/6124239/pexels-photo-6124239.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Worker in gloves installing insulation" loading="lazy" width="800" height="450" onerror="this.hidden=true"></div>
+        <div class="card-body"><h3>Vent covers, doors &amp; insulation</h3><p>Airtight vent covers, a sealed access door, and wall insulation to finish the envelope.</p>
+        <div class="specs"><span class="spec">Airtight access door</span><span class="spec">Rigid foam walls</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="svc-band alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>From first call to a dry house</h2>
+    </div>
+    <div class="photo process-photo"><span>Inspection</span><img src="https://images.pexels.com/photos/8293667/pexels-photo-8293667.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Inspector in a hard hat and safety vest reviewing a checklist outside a home" loading="lazy" width="1600" height="686" onerror="this.hidden=true"></div>
+    <ol class="steps">
+      <li><h3>Free inspection</h3><p>A specialist checks the crawl space, grading, gutters, and sump, takes moisture readings and photos, and walks you through what they found.</p></li>
+      <li><h3>Written plan &amp; price</h3><p>You get a clear scope, a fixed price, and warranty terms in writing. No pressure to decide on the spot.</p></li>
+      <li><h3>Installation</h3><p>Our own crew does the work, usually in one to three days, and cleans up before leaving. We review the finished job with you.</p></li>
+      <li><h3>Annual maintenance</h3><p>Yearly visits test pumps, check humidity, change filters, and keep your warranty in good standing.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Customer reviews</span>
+      <h2>What homeowners say after the work is done</h2>
+    </div>
+    <div class="reviews">
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>[Customer review text. Example topic: crawl space encapsulation, how the crew communicated, cleanup, and how the house smells now.]</blockquote>
+        <footer><b>[Customer name]</b>[City] · Crawl space encapsulation</footer>
+      </article>
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>[Customer review text. Example topic: French drain or downspout lines that fixed a yard that stayed flooded after every storm.]</blockquote>
+        <footer><b>[Customer name]</b>[City] · Yard drainage</footer>
+      </article>
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>[Customer review text. Example topic: sump pump replacement or annual maintenance visit, technician by name.]</blockquote>
+        <footer><b>[Customer name]</b>[City] · Sump pump service</footer>
+      </article>
+    </div>
+    <p class="note">Replace with verified reviews from Google or your review platform.</p>
+  </div>
+</section>
+
+<section id="area" aria-label="Service area" style="padding-top:0">
+  <div class="wrap">
+    <div class="area">
+      <div class="area-text">
+        <span class="eyebrow">Service area</span>
+        <h2>Local to Chattanooga</h2>
+        <p class="lede">We know the soil, the slopes, and the storms here. Not sure if you're in range? Call and ask.</p>
+      </div>
+      <div class="towns">
+        <span>[City one]</span><span>[City two]</span><span>[City three]</span><span>[City four]</span><span>[City five]</span><span>[City six]</span><span>[County]</span><span>[County]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="svc-band">
+  <div class="wrap faq-wrap">
+    <div class="section-head" style="margin:0">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+      <p class="lede">Don't see yours? Ask during your free inspection.</p>
+    </div>
+    <div>
+      <details open><summary>What's the difference between a vapor barrier and encapsulation?</summary><p>A vapor barrier covers the crawl space floor to block ground moisture. Encapsulation goes further: a heavier liner on the floor and walls, sealed seams and vents, and a dehumidifier to control the air. Which one you need depends on how much moisture and water your crawl space gets.</p></details>
+      <details><summary>Do I need a sump pump in my crawl space?</summary><p>If water ever collects under your house, yes. A liner alone can't stop water, so it needs somewhere to go. A perimeter drain carries it to the sump, and the pump sends it outside.</p></details>
+      <details><summary>Why does a crawl space need a dehumidifier once it's sealed?</summary><p>Sealing keeps humid outdoor air out, but some moisture still enters. A dehumidifier holds relative humidity below the level where mold and wood rot start.</p></details>
+      <details><summary>How long does installation take?</summary><p>Most drainage and crawl space jobs take one to three days, depending on size and access. Your estimate will include a timeline.</p></details>
+      <details><summary>Will encapsulation lower my energy bills?</summary><p>Often it helps. A dry, sealed crawl space means drier air rising into the home and less work for your HVAC system, especially if ducts run under the floor.</p></details>
+      <details><summary>Is the work covered by a warranty?</summary><p>Yes. Every system comes with written warranty terms. [Add warranty length and transferability.]</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Free inspection</span>
+      <h2 style="margin-block:12px 14px">Find out what's causing it</h2>
+      <p class="lede">Tell us what you're seeing and we'll schedule a time for a specialist to come out. The inspection and written estimate are free.</p>
+      <a class="phone-big" href="tel:5550000000">(555) 000-0000</a>
+      <p class="lede" style="margin-top:10px;font-size:.95rem">Mon–Fri 8am–6pm · Sat 9am–2pm<br>[Street address], [City, ST ZIP]</p>
+    </div>
+    <form class="est" id="estForm" novalidate>
+      <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="f-zip">ZIP code</label><input id="f-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="10"></div>
+      <div class="field full"><label for="f-issue">Main concern</label>
+        <select id="f-issue" name="issue">
+          <option>Not sure yet</option>
+          <option>Water in crawl space</option>
+          <option>Musty smell / mold</option>
+          <option>Yard flooding / pooling</option>
+          <option>Sump pump problem</option>
+          <option>Sagging floors</option>
+          <option>Crawl space encapsulation quote</option>
+        </select>
+      </div>
+      <div class="field full"><label for="f-msg">Anything else we should know?</label><textarea id="f-msg" name="message" placeholder="When it started, after heavy rain, how often…"></textarea></div>
+      <div class="field full"><button class="btn btn-primary" type="submit">Request my free inspection</button></div>
+      <div class="form-done" id="formDone" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="brand">
+        <a href="#top" aria-label="Tomas Services home">
+          <img class="logo-full" src="data:image/png;base64,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" alt="Tomas Services — Drainage &amp; Crawl Space" width="220" height="163">
+        </a>
+        <p style="margin-top:12px;color:var(--muted);font-size:.92rem;max-width:34ch">Drainage systems and crawl space repair for homes in Chattanooga, Tennessee and surrounding counties.</p>
+      </div>
+      <div><h4>Drainage</h4><ul><li><a href="#drainage">Interior drains</a></li><li><a href="#drainage">Sump pumps</a></li><li><a href="#drainage">French drains</a></li><li><a href="#drainage">Downspout lines</a></li></ul></div>
+      <div><h4>Crawl spaces</h4><ul><li><a href="#crawl">Encapsulation</a></li><li><a href="#crawl">Vapor barriers</a></li><li><a href="#crawl">Dehumidifiers</a></li><li><a href="#crawl">Support jacks</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#process">How it works</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Tomas Services. All rights reserved.</span><span>Privacy · Terms · Accessibility</span></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-ghost" href="tel:5550000000">Call now</a>
+  <a class="btn btn-primary" href="#contact">Free inspection</a>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('mnav');
+  function setMenu(open){nav.hidden=!open;btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Close':'Menu';}
+  btn.addEventListener('click',function(){setMenu(nav.hidden);});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false);});
+
+  var sel=document.getElementById('f-issue');
+  document.querySelectorAll('.chip').forEach(function(c){
+    c.addEventListener('click',function(){
+      sel.value=c.dataset.issue;
+      document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+      setTimeout(function(){document.getElementById('f-name').focus({preventScroll:true});},500);
+    });
+  });
+
+  var form=document.getElementById('estForm'),done=document.getElementById('formDone');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nEl=document.getElementById('f-name'),pEl=document.getElementById('f-phone');
+    var name=nEl.value.trim(),phone=pEl.value.trim();
+    done.hidden=false;
+    if(!name||!phone){done.textContent='Add your name and phone number so we can reach you.';(name?pEl:nEl).focus();return;}
+    done.textContent='Thanks, '+name.split(' ')[0]+'. Your request for "'+sel.value+'" is ready to send. (Layout preview: connect this form to your form handler or CRM.)';
+  });
+})();
+</script>
+</body>
+</html>
